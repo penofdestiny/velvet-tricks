@@ -1,5 +1,5 @@
 {
     "values": [
-        "vlvtrm:tick","vlvtrm:tasobot/tasobot"
+        "vlvtrm:tick","vlvtrm:tasobot/tasobot","vlvtrm:tasobot/combat/init"
     ]
 }

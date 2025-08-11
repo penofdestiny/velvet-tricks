@@ -2,7 +2,7 @@
   "anvil_cost": 1,
   "description": {
     "translate": "vlvtrm.enchantment.zenith_defense",
-    "fallback": "󰇒 Zenith Defense"
+    "fallback": "Zenith Defense"
   },
   "max_cost": {
     "base": 30,
@@ -16,7 +16,7 @@
   "slots": [
     "any"
   ],
-  "supported_items": "#minecraft:enchantable/armor",
+  "supported_items": "minecraft:ender_pearl",
   "weight": 1,
   "effects": {
     "minecraft:damage_immunity": [

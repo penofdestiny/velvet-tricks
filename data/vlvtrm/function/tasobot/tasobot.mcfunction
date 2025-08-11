@@ -1,20 +1,18 @@
-#Skills
-
-#Look at nearest player
-execute as @a[tag=tasobot.looking,tag=!tasobot.combat] at @s run rotate @s facing entity @p[tag=!tasobot.ignore,tag=!tasobot,distance=..6]
+#Look at nearest entity
+execute as @a[tag=tasobot.looking] at @s run rotate @s facing entity @p[tag=!tasobot,distance=..16]
 
 #Following
-execute as @a[tag=tasobot,tag=!tasobot.combat] unless entity @s[tag=!tasobot.party,tag=!tasobot.party1,tag=!tasobot.party2] at @s run function vlvtrm:tasobot/movement/party
+execute as @p[name=tasobot,tag=!tasobot.combat] at @s as @p[tag=tasobot.following] run function vlvtrm:tasobot/follow
+execute as tasobot at @s as @p[name=!tasobot,tag=tasobot.following,distance=24..] run tp tasobot @s
 
-#TP
-execute as @a[tag=tasobot.party,tag=!tasobot.pvp] at @s if entity @n[tag=tasobot.following,distance=24..] run tp @n[tag=tasobot.following]
-execute as @a[tag=tasobot.party1,tag=!tasobot.pvp] at @s if entity @n[tag=tasobot.party,distance=24..] run tp @n[tag=tasobot.party]
-execute as @a[tag=tasobot.party2,tag=!tasobot.pvp] at @s if entity @n[tag=tasobot.party1,distance=24..] run tp @n[tag=tasobot.party1]
+#Flying
+execute as @p[name=!tasobot,tag=tasobot.following,predicate=vlvtrm:tasobot/flying] at @s unless block ~ ~ ~ water run function vlvtrm:tasobot/skill/fly
+execute as @p[name=!tasobot,tag=tasobot.following,predicate=!vlvtrm:tasobot/flying] run player_ability tasobot fly false
+
+#Open door
+execute as tasobot at @s if block ^ ^ ^ #minecraft:doors[open=false] run player tasobot use
+execute as tasobot at @s if block ^ ^1 ^1 #minecraft:doors[open=false] run player tasobot use
 
 #Combat
-execute as @a[tag=tasobot.guardian,tag=!tasobot.pvp] at @s if entity @n[type=#monsters,distance=..24] run function vlvtrm:tasobot/combat/monster
-execute as @a[tag=tasobot.guardian,tag=!tasobot.pvp] at @s unless entity @n[type=#monsters,distance=..24] run function vlvtrm:tasobot/combat/stop
-
-#PVP
-execute as @a[tag=tasobot.pvp] run function vlvtrm:tasobot/combat/pvp
-#Will add stop triggers later
+execute as @p[name=tasobot,tag=!tasobot.combat] at @s if entity @s[tag=!tasobot.pvp] if entity @n[type=#monsters,distance=..24] run tag tasobot add tasobot.combat
+execute as @p[name=tasobot,tag=tasobot.combat] at @s unless entity @n[type=#monsters,distance=..24] run function vlvtrm:tasobot/combat/stop
