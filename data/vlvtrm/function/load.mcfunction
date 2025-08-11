@@ -2,6 +2,9 @@
 
 #Scoreboards
 scoreboard objectives add vlvtrm.join minecraft.custom:minecraft.leave_game
+scoreboard objectives add tasobot.heatriser dummy
+
+scoreboard players set @a[tag=tasobot] tasobot.heatriser 0
 
 #General
 puppet tasobot join

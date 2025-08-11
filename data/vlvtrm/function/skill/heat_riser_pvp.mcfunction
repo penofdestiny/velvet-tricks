@@ -11,10 +11,10 @@ particle minecraft:witch ^0.75 ^ ^ 0.25 0.5 0.25 0 20
 particle minecraft:end_rod ^ ^1 ^ 0.75 0 0.75 0 20
 
 #Effects
-effect give @s strength 60
-effect give @s resistance 60
-effect give @s speed 60
-effect give @s haste 60 1
+effect give @s strength infinite
+effect give @s resistance infinite
+effect give @s speed infinite
+effect give @s haste infinite 1
 
 #Message
-me casts Heat Riser!
+me casts Heat Riser+!
