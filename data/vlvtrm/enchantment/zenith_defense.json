@@ -1,0 +1,43 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "vlvtrm.enchantment.zenith_defense",
+    "fallback": "󰇒 Zenith Defense"
+  },
+  "max_cost": {
+    "base": 30,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 30,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 1,
+  "effects": {
+    "minecraft:damage_immunity": [
+      {
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "minecraft:bypasses_invulnerability",
+                "expected": false
+              },
+              {
+                "id": "minecraft:bypasses_enchantments",
+                "expected": false
+              }
+            ]
+          }
+        },
+        "effect": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+{
+    "values": [
+        "vlvtrm:load","vlvtrm:slowtick/1s","vlvtrm:slowtick/3s","vlvtrm:slowtick/10s","vlvtrm:slowtick/30s","vlvtrm:tasobot/movement/wander","vlvtrm:tasobot/slowtick/fight","vlvtrm:tasobot/slowtick/move"
+    ]
+}
