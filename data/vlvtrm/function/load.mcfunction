@@ -16,5 +16,5 @@ puppet tasobot5 join
 puppet tasobot6 join
 puppet tasobot7 join
 puppet tasobot8 join
-puppet Alex join
+puppet ButterflyI join
 execute as tasobot run say Custom Velvet Protocol initialised!

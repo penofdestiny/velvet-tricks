@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "scan": {
+    "sushi": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
