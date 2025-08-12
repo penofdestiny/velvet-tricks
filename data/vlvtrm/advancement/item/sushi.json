@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "scan": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "farmersdelight:rice_roll_medley_block",
+          "components": {}
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "vlvtrm:item/sushi"
+  }
+}

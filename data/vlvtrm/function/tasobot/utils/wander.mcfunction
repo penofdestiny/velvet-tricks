@@ -1,3 +1,3 @@
-tag @s add tasobot.looking
-tag @s add tasobot.wandering
-tag @s add tasobot.corr
+tag @a[tag=tasobot] add tasobot.looking
+tag @a[tag=tasobot] add tasobot.wandering
+tag @a[tag=tasobot] add tasobot.corr
