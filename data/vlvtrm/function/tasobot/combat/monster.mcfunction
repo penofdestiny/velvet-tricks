@@ -9,4 +9,4 @@ execute if entity @n[type=#monsters,distance=4..] run puppet @s actions run mine
 #Flying
 execute if entity @n[type=#flying] run player_ability @s fly true
 execute unless entity @n[type=#flying] run player_ability @s fly false
-execute at @s if entity @n[type=#flying,distance=3..] run motion @s[predicate=vlvtrm:flying] forward 0.33
+execute at @s if entity @n[type=#flying,distance=3..] run motion @s[predicate=vlvtrm:flying] forward 1

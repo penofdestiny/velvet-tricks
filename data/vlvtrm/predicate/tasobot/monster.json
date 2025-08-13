@@ -4,7 +4,7 @@
   "predicate": {
     "distance": {
       "y": {
-        "max": 4
+        "max": 8
       },
       "horizontal": {
         "max": 24
