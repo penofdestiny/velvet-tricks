@@ -1,6 +1,5 @@
 {
   "values": [
-    "minecraft:blaze",
     "minecraft:bogged",
     "minecraft:breeze",
     "minecraft:cave_spider",
@@ -8,11 +7,9 @@
     "minecraft:creeper",
     "minecraft:drowned",
     "minecraft:elder_guardian",
-    "minecraft:ender_dragon",
     "minecraft:enderman",
     "minecraft:endermite",
     "minecraft:evoker",
-    "minecraft:ghast",
     "minecraft:giant",
     "minecraft:guardian",
     "minecraft:hoglin",
@@ -31,7 +28,6 @@
     "minecraft:stray",
     "minecraft:vindicator",
     "minecraft:witch",
-    "minecraft:wither",
     "minecraft:wither_skeleton",
     "minecraft:zoglin",
     "minecraft:zombie",
@@ -40,6 +36,10 @@
     "toms_mobs:iceologer",
     "toms_mobs:sculkling",
     "toms_mobs:showmaster",
-    "toms_mobs:snake"
+    "toms_mobs:snake",
+    "friendsandfoes:iceologer",
+    "friendsandfoes:wildfire",
+    "friendsandfoes:illusioner",
+    "#minecraft:flying"
   ]
 }
