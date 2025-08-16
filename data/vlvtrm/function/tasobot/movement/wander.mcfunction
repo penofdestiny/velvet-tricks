@@ -1,6 +1,6 @@
 schedule function vlvtrm:tasobot/movement/wander 5s
 
-execute unless entity @a[tag=tasobot.combat] as @a[tag=!tasobot.combat,tag=tasobot.wandering] at @s unless entity @p[tag=!tasobot.ignore,tag=!tasobot,distance=..6] run function vlvtrm:tasobot/movement/wander_check
+execute unless entity @p[tag=vlvtrm.master,distance=..96] as @a[tag=!tasobot.combat,tag=tasobot.wandering] at @s unless entity @p[tag=!tasobot.ignore,tag=!tasobot,distance=..6] run function vlvtrm:tasobot/movement/wander_check
 
 #Waving
-execute unless entity @a[tag=tasobot.combat] as @a[tag=!tasobot.combat,tag=tasobot.looking,predicate=vlvtrm:rng/5p] at @s if entity @p[tag=!tasobot.ignore,tag=!tasobot,distance=..6] run emotes play Waving @s
+execute unless entity @p[tag=vlvtrm.master,distance=..96] as @a[tag=!tasobot.combat,tag=tasobot.looking,predicate=vlvtrm:rng/5p] at @s if entity @p[tag=!tasobot.ignore,tag=!tasobot,distance=..6] run emotes play Waving @s
