@@ -1,0 +1,53 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "vlvtrm.enchantment.fateweaving",
+    "fallback": "Fateweaving"
+  },
+  "max_cost": {
+    "base": 30,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 30,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/sword",
+  "weight": 1,
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:damage_entity",
+          "damage_type": "minecraft:indirect_magic",
+          "min_damage": 10,
+          "max_damage": 15
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "vlvtrm:enchantment/fateweaving"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      },
+      {
+        "effect": {
+          "type": "minecraft:play_sound",
+          "sound": "minecraft:block.amethyst_block.resonate",
+          "volume": 1,
+          "pitch": 1.5
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  }
+}
