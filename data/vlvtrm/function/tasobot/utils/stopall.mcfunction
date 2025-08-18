@@ -1,0 +1,1 @@
+execute as @a[tag=tasobot] run function vlvtrm:tasobot/combat/stop
