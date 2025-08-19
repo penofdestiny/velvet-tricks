@@ -1,8 +1,7 @@
 puppet @s actions run minecraft:swap_slot 8
-puppet @s actions run minecraft:interrupt_move_to
-player_ability @s fly false
 execute if entity @s[tag=!tasobot.party,tag=!tasobot.party1,tag=!tasobot.party2] run puppet @s actions run minecraft:sprint false
 scoreboard players set @s tasobot.heatriser 0
+player_ability @s[tag=tasobot.pvp] fly false
 effect clear @s[tag=tasobot.pvp]
 
 tag @s remove tasobot.combat

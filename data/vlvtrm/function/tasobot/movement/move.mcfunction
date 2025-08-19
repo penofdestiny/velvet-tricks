@@ -1,8 +1,8 @@
-schedule function vlvtrm:tasobot/slowtick/move 1s
+schedule function vlvtrm:tasobot/movement/move 1s
 
 #To the enemy
-execute as @a[tag=tasobot.combat,tag=!tasobot.pvp] at @s if entity @n[type=#monsters,distance=3..24] run puppet @s[predicate=!vlvtrm:flying] actions run minecraft:move_to entity @n[type=#monsters]
-execute as @a[tag=tasobot.pvp] at @s if entity @p[tag=!tasobot,tag=!tasobot.ignore,distance=3..] run puppet @s[predicate=!vlvtrm:flying] actions run minecraft:move_to entity @p[tag=!tasobot,tag=!tasobot.ignore]
+execute as @a[tag=tasobot.combat,tag=!tasobot.pvp] at @s if entity @n[type=#monsters,distance=..24] run puppet @s[predicate=!vlvtrm:flying] actions run minecraft:move_to entity @n[type=#monsters] true
+execute as @a[tag=tasobot.pvp] at @s if entity @p[tag=!tasobot,tag=!tasobot.ignore] run puppet @s[predicate=!vlvtrm:flying] actions run minecraft:move_to entity @p[tag=!tasobot,tag=!tasobot.ignore] true
 
 #To party member
 execute as @a[tag=!tasobot.combat,tag=tasobot.party] at @s if entity @p[tag=tasobot.following,distance=3..] run puppet @s[predicate=!vlvtrm:flying] actions run minecraft:move_to entity @p[tag=tasobot.following]

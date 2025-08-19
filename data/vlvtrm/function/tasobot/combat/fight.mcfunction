@@ -1,4 +1,4 @@
-schedule function vlvtrm:tasobot/slowtick/fight 0.5s
+schedule function vlvtrm:tasobot/combat/fight 0.5s
 
 #Attack monsters
 execute as @a[tag=tasobot.combat,tag=!tasobot.pvp,predicate=vlvtrm:rng/50p] at @s if entity @n[type=#monsters,distance=..4] run puppet @s actions run minecraft:attack once
