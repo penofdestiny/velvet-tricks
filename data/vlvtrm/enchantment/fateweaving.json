@@ -48,6 +48,28 @@
         "enchanted": "attacker",
         "affected": "victim"
       }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:spawn_particles",
+          "particle": {
+            "type": "minecraft:wax_on"
+          },
+          "horizontal_position": {
+            "type": "entity_position"
+          },
+          "vertical_position": {
+            "type": "entity_position",
+            "offset": 0.66
+          },
+          "horizontal_velocity": {
+            "base": 1,
+            "movement_scale": 1
+          },
+          "vertical_velocity": {}
+        }
+      }
     ]
   }
 }

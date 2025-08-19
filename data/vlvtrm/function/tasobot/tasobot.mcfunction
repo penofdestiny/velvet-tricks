@@ -13,7 +13,7 @@ execute as @a[tag=tasobot.party2,tag=!tasobot.pvp] at @s if entity @p[tag=tasobo
 
 #Combat
 execute as @a[tag=tasobot.guardian,tag=!tasobot.pvp,tag=!tasobot.combat] at @s at @n[type=#monsters,distance=..24] if predicate vlvtrm:tasobot/monster run function vlvtrm:tasobot/combat/monster
-execute as @a[tag=tasobot.guardian,tag=!tasobot.pvp,tag=tasobot.combat] at @s at @n[type=#monsters,distance=..24] unless predicate vlvtrm:tasobot/monster run function vlvtrm:tasobot/combat/stop
+execute as @a[tag=tasobot.guardian,tag=!tasobot.pvp,tag=tasobot.combat] at @s unless entity @n[type=#monsters,distance=..24] run function vlvtrm:tasobot/combat/stop
 
 #PVP
 execute as @a[tag=tasobot.pvp,scores={tasobot.heatriser=0}] at @s run function vlvtrm:tasobot/combat/pvp_init
