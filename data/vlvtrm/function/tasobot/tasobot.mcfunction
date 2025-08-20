@@ -18,4 +18,8 @@ execute as @a[tag=tasobot.guardian,tag=!tasobot.pvp,tag=tasobot.combat] at @s un
 #PVP
 execute as @a[tag=tasobot.pvp,scores={tasobot.heatriser=0}] at @s run function vlvtrm:tasobot/combat/pvp_init
 execute as @a[tag=tasobot.pvp] at @s run function vlvtrm:tasobot/combat/pvp
-#Will add stop triggers later
+#Will autostop at some point 
+
+#Taso eats nakau (pretend edition)
+scoreboard players remove @a[tag=tasobot,scores={tasobot.cd.food=1..}] tasobot.cd.food 1
+execute as @a[tag=tasobot,scores={vlvtrm.food=..6,tasobot.cd.food=0}] run function vlvtrm:tasobot/food
