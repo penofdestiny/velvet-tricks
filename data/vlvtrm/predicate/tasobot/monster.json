@@ -1,14 +1,36 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "distance": {
-      "y": {
-        "max": 4
-      },
-      "horizontal": {
-        "max": 24
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "distance": {
+          "y": {
+            "max": 4
+          },
+          "horizontal": {
+            "max": 24
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "distance": {
+          "y": {
+            "max": 16
+          },
+          "horizontal": {
+            "max": 32
+          }
+        },
+        "flags": {
+          "is_flying": true
+        }
       }
     }
-  }
+  ]
 }

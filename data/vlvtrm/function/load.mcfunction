@@ -10,14 +10,5 @@ scoreboard players set @a[tag=tasobot] tasobot.heatriser 0
 scoreboard players add @a[tag=tasobot] tasobot.cd.food 0
 
 #General
-puppet tasobot join
-puppet tasobot1 join
-puppet tasobot2 join
-puppet tasobot3 join
-puppet tasobot4 join
-puppet tasobot5 join
-puppet tasobot6 join
-puppet tasobot7 join
-puppet tasobot8 join
-puppet ButterflyI join
+function vlvtrm:tasobot/utils/spawnall
 execute as tasobot run say Custom Velvet Protocol initialised!

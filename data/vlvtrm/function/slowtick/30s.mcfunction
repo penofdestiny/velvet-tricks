@@ -1,7 +1,7 @@
 schedule function vlvtrm:slowtick/30s 30s
 
 #Area limited wandering
-execute as @n[type=item_display,tag=vlvtrm.spawn] at @s run tp @a[tag=tasobot.corr,distance=96..] @s
+execute as @n[type=item_display,tag=vlvtrm.spawn] at @s run tp @a[tag=tasobot.corr,distance=192..] @s
 
 #Training Dummy
 attribute ButterflyI minecraft:max_health base set 1024

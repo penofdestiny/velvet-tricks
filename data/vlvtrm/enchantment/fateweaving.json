@@ -51,6 +51,17 @@
     ],
     "minecraft:tick": [
       {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "movement": {
+              "speed": {
+                "min": 0.01
+              }
+            }
+          }
+        },
         "effect": {
           "type": "minecraft:spawn_particles",
           "particle": {
