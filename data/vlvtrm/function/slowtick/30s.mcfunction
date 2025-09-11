@@ -4,9 +4,10 @@ schedule function vlvtrm:slowtick/30s 30s
 execute as @n[type=item_display,tag=vlvtrm.spawn] at @s run tp @a[tag=tasobot.corr,distance=192..] @s
 
 #Training Dummy
-attribute ButterflyI minecraft:max_health base set 1024
-effect give ButterflyI minecraft:saturation infinite 0 true
-effect give ButterflyI minecraft:instant_health 1 9 true
+attribute vlvtenshi minecraft:max_health base set 1024
+attribute vlvtenshi scale base set 0.8
+effect give vlvtenshi minecraft:saturation infinite 0 true
+effect give vlvtenshi minecraft:instant_health 1 9 true
 
 #Attrib
 attribute @p[tag=vlvtrm.master] movement_speed modifier add fast 0.25 add_multiplied_total

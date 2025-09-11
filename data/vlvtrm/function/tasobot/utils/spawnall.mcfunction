@@ -7,4 +7,3 @@ puppet tasobot5 spawn
 puppet tasobot6 spawn
 puppet tasobot7 spawn
 puppet tasobot8 spawn
-puppet ButterflyI spawn
