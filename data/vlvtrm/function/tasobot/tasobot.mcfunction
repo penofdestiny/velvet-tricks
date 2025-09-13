@@ -16,7 +16,6 @@ execute as @a[tag=tasobot.guardian,tag=!tasobot.pvp] at @s at @n[type=#hostile,d
 execute as @a[tag=tasobot.guardian,tag=!tasobot.pvp,tag=tasobot.combat] at @s at @n[type=#hostile] unless predicate vlvtrm:tasobot/monster run function vlvtrm:tasobot/combat/stop
 
 #PVP
-execute as @a[tag=tasobot.pvp] at @s run function vlvtrm:tasobot/combat/pvp_init
 execute as @a[tag=tasobot.pvp] at @s run function vlvtrm:tasobot/combat/pvp
 #Will autostop at some point 
 

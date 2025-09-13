@@ -29,6 +29,10 @@
                 {
                   "id": "minecraft:bypasses_invulnerability",
                   "expected": false
+                },
+                {
+                  "id": "minecraft:is_player_attack",
+                  "expected": false
                 }
               ]
             }
