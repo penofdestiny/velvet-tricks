@@ -1,6 +1,5 @@
-tag @s remove tasobot.looking
-tag @s remove tasobot.wandering
 tag @s remove tasobot.corr
+tag @s remove tasobot.looking
 
 #Follow party member
 execute as @s[tag=tasobot.party] run function vlvtrm:tasobot/movement/follow
