@@ -1,13 +1,13 @@
 #Skills
 
 #Look at nearest player
-execute as @a[tag=tasobot.looking,tag=!tasobot.combat] at @s run rotate @s facing entity @p[tag=!tasobot.ignore,tag=!tasobot,distance=..6]
+execute as @a[tag=tasobot.looking,tag=!tasobot.combat] at @s run rotate @s facing entity @p[tag=!tasobot.ignore,tag=!tasobot,distance=..6,gamemode=!spectator]
 
 #Following
 execute as @a[tag=tasobot,tag=!tasobot.combat] unless entity @s[tag=!tasobot.party,tag=!tasobot.party1,tag=!tasobot.party2] at @s run function vlvtrm:tasobot/movement/party
 
 #TP
-execute as @a[tag=tasobot.party,tag=!tasobot.pvp] at @s if entity @p[tag=tasobot.following,distance=32..] run tp @p[tag=tasobot.following]
+execute as @a[tag=tasobot.party,tag=!tasobot.pvp] at @s if entity @p[tag=tasobot.following,distance=32..,gamemode=!spectator] run tp @p[tag=tasobot.following]
 execute as @a[tag=tasobot.party1,tag=!tasobot.pvp] at @s if entity @p[tag=tasobot.party,distance=32..] run tp @p[tag=tasobot.party]
 execute as @a[tag=tasobot.party2,tag=!tasobot.pvp] at @s if entity @p[tag=tasobot.party1,distance=32..] run tp @p[tag=tasobot.party1]
 
