@@ -8,4 +8,5 @@ scoreboard objectives add tasobot.cd.food dummy
 scoreboard players add @a[tag=tasobot] tasobot.cd.food 0
 
 #General
+function vlvtrm:tasobot/utils/spawnall
 execute as tasobot run say Custom Velvet Protocol initialised!
