@@ -1,9 +1,0 @@
-puppet tasobot spawn
-puppet tasobot1 spawn
-puppet tasobot2 spawn
-puppet tasobot3 spawn
-puppet tasobot4 spawn
-puppet tasobot5 spawn
-puppet tasobot6 spawn
-puppet tasobot7 spawn
-puppet tasobot8 spawn
